@@ -1,41 +1,59 @@
-<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title></title><meta name="description" content="Documentation for "/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title"></a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> </h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
-<a href="#crossmintclient-sdk" id="crossmintclient-sdk" style="color: inherit; text-decoration: none;">
-  <h1><code>@crossmint/client-sdk</code></h1>
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>undefined</title><meta name="description" content="Documentation for undefined"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">undefined</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>undefined</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#crossmintclient-sdk-beta" id="crossmintclient-sdk-beta" style="color: inherit; text-decoration: none;">
+  <h1><code>@crossmint/client-sdk (beta)</code></h1>
 </a>
-<p>CrossMint simplifies the user experience on your NFT sales, by offering a fully hosted credit card checkout flow, in under 10 lines of code. CrossMint currently only supports Solana NFTs, but more blockchains are coming soon.</p>
-<p>To get started, all you need to do is import our client-side libraries into your minting website, pass it your Metaplex Candy Machine ID, and sit back and let us take care of the rest.</p>
-<p>You’ll get the sales proceeds in SOL as if the user was paying with a Solana wallet.</p>
-<p><strong>CrossMint is currently in Beta. In order for CrossMint to work with your Candy Machine, contact us at sales (at) crossmint.io .</strong></p>
-<p align="center">
-  <img src="https://github.com/CrossMint/crossmint-client-sdk/raw/main/usageExample.gif?raw=true" alt="Usage Example" />
-</p>
+<p>The Crossmint SDK allows you to offer wallet-less credit card purchases on your NFT drop. It takes 5 lines of code and 5 min to integrate, and is free to use for the seller. You’ll get the sales proceeds in SOL/ETH as if the user was paying with their own wallet.</p>
+<p>Supported chains:</p>
+<ul>
+<li>Solana</li>
+<li>Polygon (for docs: contact us at sales at crossmint.io)</li>
+<li>Ethereum L1 (end of March 2021)</li>
+</ul>
+<p>To get started:</p>
+<ol>
+<li>Fill out our form in <a href="https://www.crossmint.io/developers/onboarding">https://www.crossmint.io/developers/onboarding</a> (we&#39;ll review your project in under 24hr!)</li>
+<li>Follow the instructions below to integrate with your code</li>
+</ol>
 
+<a href="#demo-of-the-user-experience" id="demo-of-the-user-experience" style="color: inherit; text-decoration: none;">
+  <h2>Demo of the user experience:</h2>
+</a>
+<p><a href="https://vimeo.com/671525311">https://vimeo.com/671525311</a></p>
+<hr>
+
+<a href="#migration-guide-to-01x-versions" id="migration-guide-to-01x-versions" style="color: inherit; text-decoration: none;">
+  <h2>Migration guide to 0.1.X versions</h2>
+</a>
+<p>Version 0.1.0 introduces breaking changes. To learn how to migrate from a version lower than 0.1.0, <a href="https://docs.google.com/document/d/14IKpjrij7kU7Dr0I7rZkf0PyDNbXiklx2v4GuzUrFbw/edit?usp=sharing">check out the migration guide</a>.</p>
+<hr>
 
 <a href="#quick-setup-nextjs" id="quick-setup-nextjs" style="color: inherit; text-decoration: none;">
   <h2>Quick Setup (Next.js)</h2>
 </a>
 
-<a href="#install" id="install" style="color: inherit; text-decoration: none;">
-  <h3>Install</h3>
+<a href="#1-install" id="1-install" style="color: inherit; text-decoration: none;">
+  <h3>1. Install</h3>
 </a>
 <pre><code class="language-shell"><span class="hl-0">yarn add @crossmint/client-sdk-react-ui</span>
 </code></pre>
 
-<a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
-  <h3>Setup</h3>
+<a href="#2-set-up" id="2-set-up" style="color: inherit; text-decoration: none;">
+  <h3>2. Set up</h3>
 </a>
-<p>Require the CrossMint styles by adding <code>require(&#39;@crossmint/client-sdk-react-ui/styles.css&#39;);</code> to your app.</p>
-<p>Import <code>CrossMintProvider</code>, wrap your app with it at the top level and pass your clientId.</p>
-<pre><code class="language-javascript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">AppProps</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;next/app&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">CrossMintProvider</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;@crossmint/client-sdk-react-ui&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">// Use require instead of import, and order matters</span><br/><span class="hl-5">require</span><span class="hl-0">(</span><span class="hl-3">&quot;../styles/globals.css&quot;</span><span class="hl-0">);</span><br/><span class="hl-5">require</span><span class="hl-0">(</span><span class="hl-3">&quot;@crossmint/client-sdk-react-ui/styles.css&quot;</span><span class="hl-0">);</span><br/><br/><span class="hl-1">export</span><span class="hl-0"> </span><span class="hl-1">default</span><span class="hl-0"> </span><span class="hl-6">function</span><span class="hl-0"> </span><span class="hl-5">App</span><span class="hl-0">({ </span><span class="hl-2">Component</span><span class="hl-0">, </span><span class="hl-2">pageProps</span><span class="hl-0"> }: </span><span class="hl-7">AppProps</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-1">return</span><span class="hl-0"> (</span><br/><span class="hl-0">        </span><span class="hl-8">&lt;</span><span class="hl-7">CrossMintProvider</span><span class="hl-0"> </span><span class="hl-9">clientId</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;YOUR_CLIENT_ID&gt;&quot;</span><span class="hl-8">&gt;</span><br/><span class="hl-0">            </span><span class="hl-8">&lt;</span><span class="hl-7">Component</span><span class="hl-0"> </span><span class="hl-6">{</span><span class="hl-0">...</span><span class="hl-2">pageProps</span><span class="hl-6">}</span><span class="hl-0"> </span><span class="hl-8">/&gt;</span><br/><span class="hl-0">        </span><span class="hl-8">&lt;/</span><span class="hl-7">CrossMintProvider</span><span class="hl-8">&gt;</span><br/><span class="hl-0">    );</span><br/><span class="hl-0">}</span>
+<p>Go to the main file where your Candy Machine button lives. For example, Home.tsx.</p>
+<p>There, just import the Pay with <code>CrossmintPayButton</code>, and add it in the UI.</p>
+<p><strong>Important</strong>: be sure to test that the Crossmint button is visible even if a user didn&#39;t connect their wallet! Else, your users without wallets won&#39;t be able to use it.</p>
+<pre><code class="language-javascript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">CrossmintPayButton</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;@crossmint/client-sdk-react-ui&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-1">export</span><span class="hl-0"> </span><span class="hl-1">default</span><span class="hl-0"> </span><span class="hl-4">function</span><span class="hl-0"> </span><span class="hl-5">Index</span><span class="hl-0">() {</span><br/><span class="hl-0">    </span><span class="hl-1">return</span><span class="hl-0"> (</span><br/><span class="hl-0">        </span><span class="hl-6">&lt;</span><span class="hl-7">CrossmintPayButton</span><br/><span class="hl-0">            </span><span class="hl-8">collectionTitle</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;TITLE_FOR_YOUR_COLLECTION&gt;&quot;</span><br/><span class="hl-0">            </span><span class="hl-8">collectionDescription</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;DESCRIPTION_OF_YOUR_COLLECTION&gt;&quot;</span><br/><span class="hl-0">            </span><span class="hl-8">collectionPhoto</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;OPT_URL_TO_PHOTO_COVER&gt;&quot;</span><br/><span class="hl-0">            </span><span class="hl-8">clientId</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;YOUR_CLIENT_ID&gt;&quot;</span><br/><span class="hl-0">        </span><span class="hl-6">/&gt;</span><br/><span class="hl-0">    );</span><br/><span class="hl-0">}</span>
 </code></pre>
-
-<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-  <h3>Usage</h3>
-</a>
-<p>Import the Pay with <code>CrossMintButton</code> into your app wherever you would like.</p>
-<pre><code class="language-javascript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">CrossMintButton</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;@crossmint/client-sdk-react-ui&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-1">export</span><span class="hl-0"> </span><span class="hl-1">default</span><span class="hl-0"> </span><span class="hl-6">function</span><span class="hl-0"> </span><span class="hl-5">Index</span><span class="hl-0">() {</span><br/><span class="hl-0">    </span><span class="hl-1">return</span><span class="hl-0"> (</span><br/><span class="hl-0">        </span><span class="hl-8">&lt;</span><span class="hl-7">CrossMintButton</span><br/><span class="hl-0">            </span><span class="hl-9">collectionTitle</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;TITLE_FOR_YOUR_COLLECTION&gt;&quot;</span><br/><span class="hl-0">            </span><span class="hl-9">collectionDescription</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;DESCRIPTION_OF_YOUR_COLLECTION&gt;&quot;</span><br/><span class="hl-0">            </span><span class="hl-9">collectionPhoto</span><span class="hl-0">=</span><span class="hl-3">&quot;&lt;OPT_URL_TO_PHOTO_COVER&gt;&quot;</span><br/><span class="hl-0">        </span><span class="hl-8">/&gt;</span><br/><span class="hl-0">    );</span><br/><span class="hl-0">}</span>
-</code></pre>
+<p>Finally, make sure you replace the following values in the CrossmintPayButton component:</p>
+<ul>
+<li><code>&lt;TITLE_FOR_YOUR_COLLECTION&gt;</code>: Example: &quot;My NFT collection&quot;</li>
+<li><code>&lt;DESCRIPTION_OF_YOUR_COLLECTION&gt;</code>: Example: &quot;The most fun community of 999 generative art monkeys in Solana&quot;</li>
+<li><code>&lt;OPT_URL_TO_PHOTO_COVER&gt;</code>: Full URL to an image for your collection. Example: &quot;<a href="https://i.picsum.photos/id/542/200/300.jpg?hmac=qD8M4ejDPlEc69pGT21BzB7CDiWOcElb_Ke7V8POjm8&quot;">https://i.picsum.photos/id/542/200/300.jpg?hmac=qD8M4ejDPlEc69pGT21BzB7CDiWOcElb_Ke7V8POjm8&quot;</a></li>
+<li><code>&lt;YOUR_CLIENT_ID&gt;</code>: This is the clientId you received after filling in <a href="https://www.crossmint.io/developers/">the onboarding form</a></li>
+</ul>
 <p>See <a href="https://github.com/CrossMint/crossmint-client-sdk/tree/main/packages/ui/react-ui">react-ui</a> for more optional customization parameters.</p>
+<hr>
 
 <a href="#packages" id="packages" style="color: inherit; text-decoration: none;">
   <h2>Packages</h2>
@@ -84,6 +102,7 @@
 <td><a href="https://nextjs.org">Next.js</a> project using React</td>
 </tr>
 </tbody></table>
+<hr>
 
 <a href="#build-from-source" id="build-from-source" style="color: inherit; text-decoration: none;">
   <h2>Build from Source</h2>
@@ -108,4 +127,21 @@
 </ol>
 <pre><code class="language-shell"><span class="hl-5">cd</span><span class="hl-0"> packages/starter/react-ui-starter</span><br/><span class="hl-0">yarn start</span>
 </code></pre>
-</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Modules</a></li><li class=" tsd-kind-module"><a href="modules/_crossmint_client_sdk_base.html">@crossmint/client-<wbr/>sdk-<wbr/>base</a></li><li class=" tsd-kind-module"><a href="modules/_crossmint_client_sdk_react_ui.html">@crossmint/client-<wbr/>sdk-<wbr/>react-<wbr/>ui</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li><li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
+<p>Remember that if doing changes on the <code>@crossmint/client-sdk-react-ui</code> package, they wont be reflected into your project until you rebuild the package and install it back again:</p>
+<pre><code><span class="hl-0"># </span><span class="hl-2">Inside</span><span class="hl-0"> </span><span class="hl-3">`packages/ui/react-ui`</span><span class="hl-0">. </span><span class="hl-2">Rebuild</span><span class="hl-0"> </span><span class="hl-1">package</span><br/><span class="hl-2">yarn</span><span class="hl-0"> </span><span class="hl-2">build</span>
+</code></pre>
+<pre><code><span class="hl-0"># </span><span class="hl-2">Inside</span><span class="hl-0"> </span><span class="hl-2">the</span><span class="hl-0"> </span><span class="hl-2">starter</span><span class="hl-0">. </span><span class="hl-2">Eg</span><span class="hl-0">. </span><span class="hl-3">`packages/starter/nextjs-starter`</span><span class="hl-0">. </span><span class="hl-2">Install</span><span class="hl-0"> </span><span class="hl-2">rebuilt</span><span class="hl-0"> </span><span class="hl-1">package</span><br/><span class="hl-2">yarn</span>
+</code></pre>
+<hr>
+
+<a href="#publish-for-the-crossmint-team" id="publish-for-the-crossmint-team" style="color: inherit; text-decoration: none;">
+  <h2>Publish (for the crossmint team)</h2>
+</a>
+<pre><code class="language-shell"><span class="hl-0">yarn build</span><br/><span class="hl-0">yarn run lerna version</span><br/><span class="hl-0">yarn run publish</span>
+</code></pre>
+<hr>
+
+<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
+  <h2><a href="https://docs.google.com/document/d/e/2PACX-1vR5NzVS2msrCMZxlcfBgAT-Y8kAypeKqH_WBeNiwVTmyEzLZvJBWrKrz_966-d3jumwIBi94IXGT6Wp/pub">Changelog</a></h2>
+</a>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-variable"><a href="modules.html#CrossmintPayButton" class="tsd-kind-icon">Crossmint<wbr/>Pay<wbr/>Button</a></li><li class="tsd-kind-variable"><a href="modules.html#CrossmintStatusButton" class="tsd-kind-icon">Crossmint<wbr/>Status<wbr/>Button</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
