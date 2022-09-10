@@ -6,6 +6,7 @@ export enum clientNames {
 export enum baseUrls {
     prod = "https://www.crossmint.io",
     staging = "https://staging.crossmint.io/",
+    goerli = "https://goerli.crossmint.io/",
     dev = "http://localhost:3001",
 }
 

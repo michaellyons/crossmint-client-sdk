@@ -1,8 +1,15 @@
 import { baseUrls } from "../models/types";
 
+const stagingEnvironments: Record<string, string> = {
+    staging: baseUrls.staging,
+    goerli: baseUrls.goerli,
+};
+
 export const getEnvironmentBaseUrl = (environment = ""): string => {
     const productionValues = ["prod", "production"];
-    if (environment === "staging") return baseUrls.staging;
+    // Staging Whitelist Check
+    if (stagingEnvironments[environment]) return stagingEnvironments[environment];
+
     if (productionValues.includes(environment) || !environment) return baseUrls.prod;
     return environment;
 };
